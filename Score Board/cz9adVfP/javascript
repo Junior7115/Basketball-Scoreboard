@@ -1,0 +1,44 @@
+let num1 = 0
+let num2 = 0 
+
+score1 = document.getElementById("score-one")
+score2 = document.getElementById("score-two")
+fresh = document.getElementById("newGame")
+
+function addPoint(){
+   let result = num1 += 1
+   score1.textContent = result
+}
+
+function addTwo(){
+    let result = num1 += 2
+    score1.textContent = result
+ }
+
+ function addThree(){
+    let result = num1 += 3
+    score1.textContent = result
+ }
+ 
+ function addNPoint(){
+    let result = num2 += 1
+    score2.textContent = result
+ }
+ 
+ function addNTwo(){
+     let result = num2 += 2
+     score2.textContent = result
+  }
+
+   function addNThree(){
+     let result = num2 += 3
+     score2.textContent = result
+  }
+ 
+  function restart(){
+    let result = 0
+    score1.textContent = 0
+    score2.textContent = 0
+    num1 = 0
+    num2 = 0
+  }
